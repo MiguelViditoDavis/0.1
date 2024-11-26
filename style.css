@@ -1,0 +1,339 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: white; /* Changed to white */
+    color: black; /* Default text color set to black */
+}
+
+/* Navbar Styles */
+nav {
+    background: #2c3e50; /* Changed to the original background color */
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #1b9bff;
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50; /* Changed to match the new nav bar color */
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Table Styles */
+table {
+    margin-top: 20px;
+    border-spacing: 10px;
+    color: black; /* Ensures table text is black */
+}
+
+td {
+    padding: 5px;
+    color: black; /* Ensures cell text is black */
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.image-gallery img {
+    width: 225px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Section Title */
+.section-title {
+    color: black; /* Changed to black */
+    font-size: 28px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Image Gallery Switch */
+.image-gallery-switch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.image-gallery-switch img {
+    width: 195px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Horizontal Scrolling Gallery */
+.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-galleryH {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.image-galleryH img {
+    width: 225px;
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* Hover Zoom Effect */
+.image-galleryH img:hover {
+    transform: scale(1.05);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+/* Hide Scroll Buttons on Mobile */
+@media (max-width: 768px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+/* Game Card Container */
+.game-card {
+    position: relative;
+    display: inline-block;
+}
+
+/* Game Info Overlay */
+.game-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.game-info.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Global Reset (if not already applied) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    width: 90%; /* Keeps borders on the sides */
+    max-width: 1200px; /* Optional: Limit width on larger screens */
+    margin: 0 auto; /* Center the hero section */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px; /* Adjusted height for better image visibility */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for depth */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.5px;
+}
+.hero {
+    min-height: 60vh; /* Sets height to 60% of the viewport height */
+}
+
+
+/* Hero Section */
+.hero {
+    transition: opacity 1.5s ease-in-out; /* Longer transition for a softer fade */
+}
+
+/* Fade Effect for Hero Image */
+.fade-out {
+    opacity: 0.5; /* Only fade slightly to avoid complete disappearance */
+}
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's GameSite - Xbox Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GameSite</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="xbox.html">Xbox</a></li>
+            <li><a href="playstation.html">PlayStation</a></li>
+            <li><a href="nintendo.html">Nintendo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Xbox One Games Section -->
+    <h2 class="section-title">Xbox One Games</h2>
+    <hr>
+    <div class="gallery-container">
+        <button class="scroll-btn left" onclick="scrollLeft('xboxOne')">&#10094;</button>
+        <div class="image-galleryH" id="xboxOne">
+            <div class="game-card"><img src="img/bo3.jpg" alt="Black Ops 3"><div class="game-info">Black Ops 3 - An action FPS game.</div></div>
+            <div class="game-card"><img src="img/ds3.jpg" alt="Dark Souls 3"><div class="game-info">Dark Souls 3 - A challenging RPG.</div></div>
+            <div class="game-card"><img src="img/acunity.jpg" alt="Assassin's Creed Unity"><div class="game-info">Set during the French Revolution.</div></div>
+            <div class="game-card"><img src="img/eldenring.jpg" alt="Elden Ring"><div class="game-info">Elden Ring - An open-world RPG.</div></div>
+            <div class="game-card"><img src="img/sekiro.jpg" alt="Sekiro"><div class="game-info">Sekiro: Shadows Die Twice - A samurai's journey.</div></div>
+            <div class="game-card"><img src="img/ww2.jpg" alt="COD WWII"><div class="game-info">Call of Duty: WWII - A historical FPS.</div></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('xboxOne')">&#10095;</button>
+    </div>
+
+    <!-- Xbox 360 Games Section -->
+    <h2 class="section-title">Xbox 360 Games</h2>
+    <hr>
+    <div class="gallery-container">
+        <button class="scroll-btn left" onclick="scrollLeft('xbox360')">&#10094;</button>
+        <div class="image-galleryH" id="xbox360">
+            <div class="game-card"><img src="img/bestgameoat.jpg" alt="Assassin's Creed II"><div class="game-info">Assassin's Creed II - Renaissance adventure.</div></div>
+            <div class="game-card"><img src="img/brotherhood.jpg" alt="Assassin's Creed Brotherhood"><div class="game-info">Assassin's Creed Brotherhood - Set in Rome.</div></div>
+            <div class="game-card"><img src="img/revelations.jpg" alt="Assassin's Creed Revelations"><div class="game-info">Assassin's Creed Revelations - Ottoman Empire setting.</div></div>
+            <div class="game-card"><img src="img/gow3.jpg" alt="Gears of War 3"><div class="game-info">Gears of War 3 - Third-person shooter.</div></div>
+            <div class="game-card"><img src="img/fable1.jpg" alt="Fable"><div class="game-info">Fable - A whimsical RPG.</div></div>
+            <div class="game-card"><img src="img/halor.jpg" alt="Halo Reach"><div class="game-info">Halo Reach - A prequel to the Halo saga.</div></div>
+            <div class="game-card"><img src="img/ds1.jpg" alt="Dark Souls"><div class="game-info">Dark Souls - The original classic.</div></div>
+            <div class="game-card"><img src="img/ds2.jpg" alt="Dark Souls 2"><div class="game-info">Dark Souls 2 - A worthy sequel.</div></div>
+            <div class="game-card"><img src="img/gow2.jpg" alt="Gears of War 2"><div class="game-info">Gears of War 2 - Third-person action.</div></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('xbox360')">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

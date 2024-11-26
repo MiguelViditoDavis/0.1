@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's GameSite - Nintendo Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GameSite</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="xbox.html">Xbox</a></li>
+            <li><a href="playstation.html">PlayStation</a></li>
+            <li><a class="active" href="nintendo.html">Nintendo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Wii Games Section -->
+    <h2 class="section-title">Wii Games</h2>
+    <hr>
+    <div class="gallery-container">
+        <button class="scroll-btn left" onclick="scrollLeft('wii')">&#10094;</button>
+        <div class="image-galleryH" id="wii">
+            <div class="game-card"><img src="img/twilight.jpg" alt="Twilight Princess"><div class="game-info">Twilight Princess - A classic Zelda adventure.</div></div>
+            <div class="game-card"><img src="img/skywardsword.jpg" alt="Skyward Sword"><div class="game-info">Skyward Sword - Explore Link's origins.</div></div>
+            <div class="game-card"><img src="img/wiisports.jpg" alt="Wii Sports"><div class="game-info">Wii Sports - Play with motion controls.</div></div>
+            <div class="game-card"><img src="img/mariog.jpg" alt="Super Mario Galaxy"><div class="game-info">Super Mario Galaxy - Explore space with Mario.</div></div>
+            <div class="game-card"><img src="img/brawl.jpg" alt="Super Smash Bros. Brawl"><div class="game-info">Super Smash Bros. Brawl - Fight your favorite characters.</div></div>
+            <div class="game-card"><img src="img/naruto.jpg" alt="Naruto"><div class="game-info">Naruto - A ninja adventure.</div></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('wii')">&#10095;</button>
+    </div>
+
+    <!-- Switch Games Section -->
+    <h2 class="section-title">Switch Games</h2>
+    <hr>
+    <div class="gallery-container">
+        <button class="scroll-btn left" onclick="scrollLeft('switch')">&#10094;</button>
+        <div class="image-galleryH" id="switch">
+            <div class="game-card"><img src="img/botw.jpg" alt="Breath of the Wild"><div class="game-info">Breath of the Wild - An open-world Zelda masterpiece.</div></div>
+            <div class="game-card"><img src="img/totk.jpg" alt="Tears of the Kingdom"><div class="game-info">Tears of the Kingdom - Zelda's next big adventure.</div></div>
+            <div class="game-card"><img src="img/odyssey.jpg" alt="Super Mario Odyssey"><div class="game-info">Super Mario Odyssey - Mario's global adventure.</div></div>
+            <div class="game-card"><img src="img/smash.jpg" alt="Super Smash Bros. Ultimate"><div class="game-info">Super Smash Bros. Ultimate - The ultimate crossover fighting game.</div></div>
+            <div class="game-card"><img src="img/metroid.jpg" alt="Metroid Dread"><div class="game-info">Metroid Dread - Explore with Samus Aran.</div></div>
+            <div class="game-card"><img src="img/awakening.jpg" alt="Link's Awakening"><div class="game-info">Link's Awakening - A charming Zelda remake.</div></div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight('switch')">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

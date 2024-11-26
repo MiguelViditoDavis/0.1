@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's GameSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">GameSite</label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="xbox.html">Xbox</a></li>
+            <li><a href="playstation.html">PlayStation</a></li>
+            <li><a href="nintendo.html">Nintendo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to GameSite</h1>
+            <p>Explore the world of video games across all platforms. Discover games, learn more, and dive into your next adventure with GameSite.</p>
+        </div>
+    </header>
+    
+    <!-- Xbox Games Section -->
+    <section>
+        <h2 class="section-title">Xbox Games</h2>
+        <hr>
+        <div class="gallery-container">
+            <button class="scroll-btn left" onclick="scrollLeft('xbox')">&#10094;</button>
+            <div class="image-galleryH" id="xbox">
+                <!-- Xbox Games -->
+                <div class="game-card"><img src="img/bo3.jpg" alt="Black Ops 3"><div class="game-info">Black Ops 3 - An action FPS game.</div></div>
+                <div class="game-card"><img src="img/ds3.jpg" alt="Dark Souls 3"><div class="game-info">Dark Souls 3 - A challenging RPG.</div></div>
+                <div class="game-card"><img src="img/acunity.jpg" alt="Assassin's Creed Unity"><div class="game-info">Set during the French Revolution.</div></div>
+                <div class="game-card"><img src="img/eldenring.jpg" alt="Elden Ring"><div class="game-info">Elden Ring - An open-world RPG.</div></div>
+                <div class="game-card"><img src="img/sekiro.jpg" alt="Sekiro"><div class="game-info">Sekiro: Shadows Die Twice - A samurai's journey.</div></div>
+                <div class="game-card"><img src="img/ww2.jpg" alt="COD WWII"><div class="game-info">Call of Duty: WWII - A historical FPS.</div></div>
+                <div class="game-card"><img src="img/bestgameoat.jpg" alt="Assassin's Creed II"><div class="game-info">AC2: The first installment of the Ezio trilogy, set in Renaissance Italy.</div></div>
+                <div class="game-card"><img src="img/brotherhood.jpg" alt="Assassin's Creed Brotherhood"><div class="game-info">AC Brotherhood: The second Ezio trilogy installment, set in Rome.</div></div>
+                <div class="game-card"><img src="img/revelations.jpg" alt="Assassin's Creed Revelations"><div class="game-info">AC Revelations: The final Ezio trilogy installment, set in the Ottoman Empire.</div></div>
+                <div class="game-card"><img src="img/gow3.jpg" alt="Gears of War 3"><div class="game-info">Gears of War 3 - Third-person shooter.</div></div>
+                <div class="game-card"><img src="img/fable1.jpg" alt="Fable"><div class="game-info">Fable - A whimsical RPG.</div></div>
+                <div class="game-card"><img src="img/halor.jpg" alt="Halo Reach"><div class="game-info">Halo Reach - A prequel to the Halo saga.</div></div>
+                <div class="game-card"><img src="img/ds1.jpg" alt="Dark Souls"><div class="game-info">The original Dark Souls game.</div></div>
+                <div class="game-card"><img src="img/ds2.jpg" alt="Dark Souls 2"><div class="game-info">The sequel to Dark Souls.</div></div>
+                <div class="game-card"><img src="img/gow2.jpg" alt="Gears of War 2"><div class="game-info">A third-person shooter.</div></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('xbox')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- PlayStation Games Section -->
+    <section>
+        <h2 class="section-title">PlayStation Games</h2>
+        <hr>
+        <div class="gallery-container">
+            <button class="scroll-btn left" onclick="scrollLeft('playstation')">&#10094;</button>
+            <div class="image-galleryH" id="playstation">
+                <!-- PlayStation Games -->
+                <div class="game-card"><img src="img/rdr2ps4.jpg" alt="Red Dead Redemption 2"><div class="game-info">A western adventure.</div></div>
+                <div class="game-card"><img src="img/spiderman.jpg" alt="Spider-Man"><div class="game-info">Swing into action as Spider-Man.</div></div>
+                <div class="game-card"><img src="img/gow2018.jpg" alt="God of War"><div class="game-info">God of War - Explore Norse mythology.</div></div>
+                <div class="game-card"><img src="img/tlou2.jpg" alt="The Last of Us 2"><div class="game-info">Survive the post-apocalypse.</div></div>
+                <div class="game-card"><img src="img/bloodborne.jpg" alt="Bloodborne"><div class="game-info">Bloodborne - A gothic RPG.</div></div>
+                <div class="game-card"><img src="img/ghost.jpg" alt="Ghost of Tsushima"><div class="game-info">Ghost of Tsushima - A samurai's journey.</div></div>
+                <div class="game-card"><img src="img/uncharted2.jpg" alt="Uncharted 2"><div class="game-info">Explore with Nathan Drake.</div></div>
+                <div class="game-card"><img src="img/gta5.jpg" alt="GTA V"><div class="game-info">GTA V - A crime epic.</div></div>
+                <div class="game-card"><img src="img/mgs4.jpg" alt="Metal Gear Solid 4"><div class="game-info">Stealth action gameplay.</div></div>
+                <div class="game-card"><img src="img/batmanaaps3.jpg" alt="Batman Arkham Asylum"><div class="game-info">Step into Batman's shoes.</div></div>
+                <div class="game-card"><img src="img/lbp.jpg" alt="Little Big Planet"><div class="game-info">Create and explore new worlds.</div></div>
+                <div class="game-card"><img src="img/tlou.jpg" alt="The Last of Us"><div class="game-info">Survive with Joel and Ellie.</div></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('playstation')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Nintendo Games Section -->
+    <section>
+        <h2 class="section-title">Nintendo Games</h2>
+        <hr>
+        <div class="gallery-container">
+            <button class="scroll-btn left" onclick="scrollLeft('nintendo')">&#10094;</button>
+            <div class="image-galleryH" id="nintendo">
+                <!-- Nintendo Games -->
+                <div class="game-card"><img src="img/twilight.jpg" alt="Twilight Princess"><div class="game-info">A classic Zelda adventure.</div></div>
+                <div class="game-card"><img src="img/skywardsword.jpg" alt="Skyward Sword"><div class="game-info">Explore Link's origins.</div></div>
+                <div class="game-card"><img src="img/wiisports.jpg" alt="Wii Sports"><div class="game-info">Play with motion controls.</div></div>
+                <div class="game-card"><img src="img/mariog.jpg" alt="Mario Galaxy"><div class="game-info">Explore space with Mario.</div></div>
+                <div class="game-card"><img src="img/brawl.jpg" alt="Super Smash Bros. Brawl"><div class="game-info">Fight your favorite characters.</div></div>
+                <div class="game-card"><img src="img/naruto.jpg" alt="Naruto"><div class="game-info">Naruto - A ninja adventure.</div></div>
+                <div class="game-card"><img src="img/botw.jpg" alt="Breath of the Wild"><div class="game-info">An open-world masterpiece.</div></div>
+                <div class="game-card"><img src="img/totk.jpg" alt="Tears of the Kingdom"><div class="game-info">A Zelda sequel.</div></div>
+                <div class="game-card"><img src="img/odyssey.jpg" alt="Super Mario Odyssey"><div class="game-info">Mario's world adventure.</div></div>
+                <div class="game-card"><img src="img/smash.jpg" alt="Super Smash Bros. Ultimate"><div class="game-info">The ultimate fighting game.</div></div>
+                <div class="game-card"><img src="img/metroid.jpg" alt="Metroid"><div class="game-info">Explore with Samus.</div></div>
+                <div class="game-card"><img src="img/awakening.jpg" alt="Link's Awakening"><div class="game-info">A charming Zelda game.</div></div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight('nintendo')">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+    
+</body>
+
+</html>
